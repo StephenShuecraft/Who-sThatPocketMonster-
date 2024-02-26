@@ -95,7 +95,9 @@ class MainActivity : AppCompatActivity() {
                 score += 1
                 scoreText.setText("score = $score")
             } else {
-                val message = "You suck!!!!!!"
+                score -= 1
+                scoreText.setText("score = $score")
+                val message = "Incorrect"
                 val duration = Toast.LENGTH_SHORT
 
                 Toast.makeText(this, message, duration).show()
